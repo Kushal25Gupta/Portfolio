@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="typed.min.js"></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">PORTFO<span>LIO</span></a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <div class="toggle"></div>
+        <div class="toggle"></div>
+        <div class="toggle"></div>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text">
+      <p>Hello, I am</p>
+      <h1>Kushal Gupta</h1>
+      <p>And I am a <span id="ani" style="color: yellow;"></span></p>
+      <a href="#contact">
+        <button class="c-btn">Hire Me
+        </button>
+      </a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section-info">
+      <h1>About Me</h1>
+    </div>
+
+    <div class="about-row">
+      <div class="about-left-col">
+        <img src="img/about.webp" />
+      </div>
+      <div class="about-right-col">
+        <p id="p-title">Hello, I'm Kushal Gupta & I'm a <span style="color: #e74c3c;">Software Engineer.</span></p>
+        <p>
+        I am pursuing B.Tech in Computer Science Engineering, currently I am
+          in First year.
+        </p>
+        <p>My Skills are : HTML5, CSS3, Bootstrap4, C, C++, Python</p>
+        <button class="c-btn">
+          <a href="https://drive.google.com/file/d/1xQPE4dxE0wdEB5fjrAKvXyJluiSmctM-/view" target="_blank"> Download CV
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contact">
+    <div class="section-info" style="color: white">
+      <h1>Get in Touch</h1>
+    </div>
+    <div class="contact-row">
+      <div class="contact-left-col">
+        <img src="img/contact.png" />
+      </div>
+      <div class="contact-right-col">
+        <form action="https://formspree.io/f/mjvlnpbq" method="POST" id="my-form">
+          <h2>Connect With me</h2>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="E-mail" />
+          <br />
+          <textarea rows="5" name="text" placeholder="Message"></textarea>
+          <br />
+          <button class="c-btn" type="submit">Submit</button>
+        </form>
+        <div id="status"></div>
+      </div>
+
+    </div>
+  </section>
+  <section id="footer">
+    <div class="footer-row">
+      <div class="footer-left-col">
+        <h2>Social links</h2>
+      </div>
+      <div class="footer-right-col">
+        <a href="https://www.linkedin.com/in/kushal-gupta-0bb55b228/">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/Kushal25Gupta">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/kushalgupta2510/?hl=en">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/KushalG89668449">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    let animate = new Typed('#ani', {
+      strings: ["Software", "Engineer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true,
+    })
+  </script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
